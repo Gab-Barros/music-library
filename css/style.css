@@ -1,0 +1,28 @@
+/* RESET */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+  margin: 0px;
+  padding: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* SIDENAV */
+
+.sidenav {
+  height: 100vh;
+  width: 20%;
+  border: 1px solid red;
+}
