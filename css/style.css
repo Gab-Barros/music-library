@@ -2,6 +2,7 @@
 body,
 h1,
 h2,
+h3,
 p,
 ul,
 li,
@@ -10,8 +11,23 @@ a {
   padding: 0px;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 * {
   box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #e5e5e5e7;
+  opacity: 0.5;
+  font-size: 1rem;
 }
 
 img {
@@ -19,10 +35,111 @@ img {
   display: block;
 }
 
-/* SIDENAV */
+/*** SIDENAV ***/
 
 .sidenav {
   height: 100vh;
   width: 20%;
-  border: 1px solid red;
+  background: #040517;
+  padding: 80px 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* profile */
+
+.profile {
+  display: flex;
+  flex: 1;
+}
+
+.profile-img {
+  border-radius: 6px;
+  width: 70px;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.profile-img img {
+  border-radius: 6px;
+  position: absolute;
+  top: -8px;
+}
+
+.profile-info {
+  padding: 0px 10px 10px 10px;
+}
+
+.profile-info h3 {
+  color: #e5e5e5e7;
+}
+
+.profile-info a {
+  display: block;
+  text-decoration: none;
+  color: #e5e5e5e7;
+  opacity: 0.5;
+  margin-top: 8px;
+  font-size: 0.875rem;
+}
+
+.profile-info a:hover {
+  opacity: 1;
+}
+
+.profile-info i {
+  margin-left: 10px;
+}
+
+/* menus */
+
+.menu li a {
+  font-size: 0.875rem;
+}
+
+.menu1,
+.menu2 {
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.menu1::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background: #e5e5e5e7;
+  position: relative;
+  top: -10px;
+  opacity: 0.2;
+}
+
+.menu1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background: #e5e5e5e7;
+  position: relative;
+  top: 30px;
+  opacity: 0.2;
+}
+
+.menu1 {
+  margin-bottom: 60px;
+}
+
+.menu li {
+  margin: 10px 5px;
+}
+
+.menu i {
+  color: #e5e5e5e7;
+  opacity: 0.5;
+  margin-right: 10px;
+}
+
+.menu li:hover a,
+.menu li:hover i {
+  opacity: 1;
 }
