@@ -154,7 +154,7 @@ img {
 /*** MAIN ***/
 
 main {
-  padding: 15px 10px 15px 60px;
+  padding: 10px 10px 10px 60px;
   width: 100%;
 }
 
@@ -241,7 +241,6 @@ main input {
 
 *::-webkit-scrollbar-thumb {
   background-color: #200f56;
-  border-radius: 20px;
   border: none;
 }
 
@@ -249,11 +248,53 @@ main input {
 
 main > div:nth-of-type(2) {
   display: flex;
-  border: 1px solid red;
 }
 
 .profile-views,
 .tracks {
   flex: 1;
-  border: 1px solid red;
+  margin-top: 10px;
+}
+
+.profile-views ul li {
+  margin: 12px 0px;
+  display: flex;
+  gap: 15px;
+}
+
+.view-img {
+  max-width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.view-img img {
+  max-width: 120px;
+  position: relative;
+  right: 30px;
+}
+
+.view-info {
+  flex-basis: 200px;
+}
+
+.view-info h3 {
+  font-size: 1.25rem;
+  color: #e5e5e5e7;
+  opacity: 0.5;
+  font-weight: normal;
+}
+
+.view-info p {
+  font-size: 0.875rem;
+  margin-top: 5px;
+  color: #e5e5e5e7;
+  opacity: 0.2;
+}
+
+.profile-views ul li > p {
+  color: #e5e5e5e7;
+  opacity: 0.2;
+  align-self: center;
 }
