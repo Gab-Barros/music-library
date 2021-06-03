@@ -170,6 +170,7 @@ main input {
   width: 600px;
   font-size: 1rem;
   padding: 15px 5px;
+  color: #e5e5e5e7;
 }
 
 /* playlists */
@@ -227,7 +228,7 @@ main input {
 /* firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: blue orange;
+  scrollbar-color: #200f56 rgba(0, 0, 0, 0.1);
 }
 
 /* chrome, edge e safari */
